@@ -1,0 +1,230 @@
+/* CSS files add styling rules to your content
+
+ */
+
+
+body{
+  background-color: red;
+  font-family: "Roc Grotesk";
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	border-radius: 25px;
+  }
+.title{
+    color: white;
+    text-align: center;
+    font-size: 52px;
+    font-weight: 800;
+}
+
+.text1{
+    color: white; 
+    text-align: center; 
+    font-size: 28px;
+  }
+
+
+.title2{
+  text-align: center;
+  color: red;
+  font-size: 26px;
+}
+
+h2{
+  font-family: 'Roc Grotesk';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+  color: red;
+}
+
+h4{
+  font-size: 30px;
+  color: red;
+}
+
+h5{
+  font-size: 18px; 
+  font-weight: normal;
+}
+
+
+.carousel {
+  width: 100%;
+}
+
+.carousel input {
+  display: none;
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-height: 850px;
+	perspective: 1000px;
+  overflow: hidden;
+}
+
+.info .item {
+	position: absolute;
+	box-sizing: border-box;
+	background-color: white;
+	padding: 30px;
+	width: 500px;
+	text-align: center;
+	transition: transform 0.4s;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 55px;
+  transition: transform .6s; /* Animation */
+}
+
+
+
+.item:hover{
+    transform: scale(1.03)
+}
+
+#i1:checked ~ .info label[for="i1"] {
+	z-index: 4;
+}
+#i1:checked ~ .info label[for="i2"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+	z-index: 3;
+}
+#i1:checked ~ .info label[for="i3"] {
+	transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+	z-index: 2;
+}
+#i1:checked ~ .info label[for="i4"] {
+	transform: translateX(900px) translateZ(-270px) rotateY(-35deg);
+	z-index: 1;
+}
+#i1:checked ~ .info label[for="i5"] {
+	transform: translateX(1200px) translateZ(-360px) rotateY(-45deg);
+}
+
+#i2:checked ~ .info label[for="i1"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+}
+#i2:checked ~ .info label[for="i2"] {
+	z-index: 3;
+}
+#i2:checked ~ .info label[for="i3"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+	z-index: 2;
+}
+#i2:checked ~ .info label[for="i4"] {
+	transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+	z-index: 1;
+}
+#i2:checked ~ .info label[for="i5"] {
+	transform: translateX(900px) translateZ(-270px) rotateY(-35deg);
+}
+
+#i3:checked ~ .info label[for="i1"] {
+	transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+}
+#i3:checked ~ .info label[for="i2"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+}
+#i3:checked ~ .info label[for="i3"] {
+	z-index: 3;
+}
+#i3:checked ~ .info label[for="i4"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+	z-index: 2;
+}
+#i3:checked ~ .info label[for="i5"] {
+	transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+}
+
+#i4:checked ~ .info label[for="i1"] {
+	transform: translateX(-900px) translateZ(-270px) rotateY(35deg);
+}
+#i4:checked ~ .info label[for="i2"] {
+	transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+}
+#i4:checked ~ .info label[for="i3"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+	z-index: 2;
+}
+#i4:checked ~ .info label[for="i4"] {
+	z-index: 3;
+}
+#i4:checked ~ .info label[for="i5"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+}
+
+#i5:checked ~ .info label[for="i1"] {
+	transform: translateX(-1200px) translateZ(-360px) rotateY(45deg);
+}
+#i5:checked ~ .info label[for="i2"] {
+	transform: translateX(-900px) translateZ(-270px) rotateY(35deg);
+	z-index: 1;
+}
+#i5:checked ~ .info label[for="i3"] {
+	transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+	z-index: 2;
+}
+#i5:checked ~ .info label[for="i4"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+	z-index: 3;
+}
+#i5:checked ~ .info label[for="i5"] {
+	z-index: 4;
+}
+
+
+img{
+	border-radius: 15px;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+	margin-left: 15%;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+  }
+  
+  .column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+	.column {
+	  flex: 50%;
+	  max-width: 75%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.column {
+	  flex: 100%;
+	  max-width: 100%;
+	}
+  }
